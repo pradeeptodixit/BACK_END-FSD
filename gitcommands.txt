@@ -1,0 +1,17 @@
+git commands
+local repository to cloud repository
+git status
+git init
+git add file name/.
+git commit-m "message"
+git remote add origin githubrepository
+url
+git branch -M main
+git push -u origin main
+
+cloud repository to local repository
+git clone url
+
+other git commands
+git log
+git checkout
