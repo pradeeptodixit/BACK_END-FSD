@@ -1,0 +1,1 @@
+// Create one log synchronous task, function test, print any message, create promise inside it.
