@@ -8,7 +8,7 @@ event.on("greet",(name)=>{
     console.log(`hello cse 24 my name is ${name}`);//template literals-`${vari}`
 });
 events.on("exit",()=>{})
-event.emit("greet","Nitin Bhardwaj");
+event.emit("greet","Rahul");
 
 // const even=new EventEmitter();
 // event.on("name",()=>{
