@@ -16,8 +16,8 @@ const app = express();
 
 app.use(express.json());
 let users=[
-    { id: 1, name: "Nirjara", email: "nirjara@example.com" },
-    { id: 2, name: "Pavni", email: "pavni@example.com" }
+    { id: 1, name: "Rahul", email: "rahul@example.com" },
+    { id: 2, name: "Rohit", email: "rohit@example.com" }
 ];
 
 //Get :get request to fetch all users
