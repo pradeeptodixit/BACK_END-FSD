@@ -46,8 +46,8 @@ app.listen(8000, () => {
 // Create a PRODUCT REST API and test all method in THUNDER CLIENT
 // work it on approx 100 products and test all the methods in THUNDER CLIENT
 // Structure
-// 1. create folder productrestapi
-// 2. create index.js file
+// 1.create folder productrestapi
+// 2.create index.js file
 // 3.create a product.json
-// 4.install npm init :package.json
+// 4.install npm init:package.json
 // 5.install express: npm i express :package_lock.json
