@@ -4,7 +4,7 @@ Welcome to my backend development repository! This repository documents my journ
 
 ## 📌 About Me
 
-Hi, I'm **Nitin Bhardwaj**, a Computer Science student passionate about software development and problem-solving. I'm currently focused on mastering backend technologies and building scalable, secure, and efficient applications.
+Hi, I'm **Pradeepto Dixit**, a Computer Science student passionate about software development and problem-solving. I'm currently focused on mastering backend technologies and building scalable, secure, and efficient applications.
 
 ## 🎯 Goals
 
