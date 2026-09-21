@@ -7,6 +7,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// HOME ROUTE
+app.get("/", (req, res) => {
+  res.send("Express REST API is running successfully!");
+});
+
 // GET products
 app.get("/api/products", (req, res) => {
   const data = fs.readFileSync("products.json", "utf-8");
@@ -20,17 +25,25 @@ app.post("/api/products", (req, res) => {
   const data = fs.readFileSync("products.json", "utf-8");
   const products = JSON.parse(data);
 
+  const newId =
+    products.length === 0
+      ? 1
+      : Math.max(...products.map((product) => product.id)) + 1;
+
   const newProduct = {
-    id: products.length + 1,
+    id: newId,
     name: req.body.name,
-    price: req.body.price,
+    price: Number(req.body.price),
   };
 
   products.push(newProduct);
 
-  fs.writeFileSync("products.json", JSON.stringify(products, null, 2));
+  fs.writeFileSync(
+    "products.json",
+    JSON.stringify(products, null, 2)
+  );
 
-  res.json(newProduct);
+  res.status(201).json(newProduct);
 });
 
 // DELETE product
@@ -40,16 +53,31 @@ app.delete("/api/products/:id", (req, res) => {
 
   const id = parseInt(req.params.id);
 
-  products = products.filter((product) => product.id !== id);
+  const productExists = products.some(
+    (product) => product.id === id
+  );
 
-  fs.writeFileSync("products.json", JSON.stringify(products, null, 2));
+  if (!productExists) {
+    return res.status(404).json({
+      message: "Product not found",
+    });
+  }
+
+  products = products.filter(
+    (product) => product.id !== id
+  );
+
+  fs.writeFileSync(
+    "products.json",
+    JSON.stringify(products, null, 2)
+  );
 
   res.json({
     message: "Product deleted successfully",
   });
 });
 
-// Start server
+// START SERVER
 app.listen(5000, () => {
   console.log("Server running on http://localhost:5000");
 });

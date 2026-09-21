@@ -25,53 +25,53 @@
     "price": 3500
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Gaming Keyboard",
     "price": 2800
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "Wireless Mouse",
     "price": 1200
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Gaming Mouse",
     "price": 1800
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "Mechanical Keyboard",
     "price": 4500
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "Computer Monitor",
     "price": 15000
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "USB Flash Drive",
     "price": 700
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "External Hard Drive",
     "price": 5500
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "SSD 1TB",
     "price": 6500
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Webcam",
     "price": 2200
   },
   {
     "id": 15,
-    "name": "battery",
-    "price": "1500"
+    "name": "Battery",
+    "price": 1500
   }
 ]
